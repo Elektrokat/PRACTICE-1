@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <h1 id="title">SCHOLARSHIP ONBOARDING FORM</h1>
+    <p id="description">...your one way out...</p>
+    <div class="mybox">
+    <form id="survey-form">
+      <label for="name" id="name-label">Name <input type ="text" id="name" placeholder="Enter your name" required/>
+      </label>
+      <label for="email" id="email-label">Email <input type="email" id="email" placeholder="Enter your Email" required/>
+      </label>
+      <label for="number" id="number-label">Age <input type="number" id="number" placeholder="Age" min="16" max="120" required/>
+      </label>
+      <label for="dropdown">Which option bests describes your current role?</label>
+      <select id="dropdown" name="dropdown">
+        <option disabled selected >Select an option</option>
+        <option>High School</option>
+        <option>Undergraduate</option>
+        <option>Post Graduate</option>
+        <option>Employed</option>
+        <option>Other</option>
+      </select><br><br>
+
+        <label>Choose your Gender</label>
+        <label for="male"> <input type="radio" id="male" name="gender" value="male"/>Male</label>
+        <label for="female"> <input type="radio" id="female" name="gender" value="female"/>Female</label>
+        <label for="other"> <input type="radio" id="other" name="gender" value="other"/>Other</label>
+        <label>What would you like to major in? </label>     
+        <label><input type="checkbox" value="accounting"/>Accounting</label>
+        <label> <input type="checkbox" value="health"/>Health</label>      
+        <label> <input type="checkbox" value="commerce"/>Commerce</label>      
+        <label> <input type="checkbox" value="science"/>Science</label>      
+        <label> <input type="checkbox" value="technology"/>Technology</label>       
+        <label for="text">Bio<textarea id="text" rows="5" cols="24" maxlength="250" placeholder="tell us about yourself..."></textarea></label>
+     <input type="submit" id="submit"/>  
+    </form>
+    </div>
+</body>
+</html>
